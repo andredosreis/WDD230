@@ -44,3 +44,7 @@ footer{
     text-align: center;
     border-radius: 10px;
 }
+footer span{
+    font-size: 1rem;
+    color: yellow;
+}
