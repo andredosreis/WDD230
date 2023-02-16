@@ -1,8 +1,8 @@
 
 
-@media screen and (min-width: 1200px) {
+/*@media screen and (min-width: 1200px) {*/
     
-
+/* HEADER*/
 header{
     background-color: #14213d;
     display:grid;
@@ -89,5 +89,28 @@ a img{
 
 
 
+
+
+
+/* -----MAIN---*/
+
+main{
+
+    max-width: 960px;
+    margin: 100px auto;
+    padding: 10px;
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /*column-gap: 10px;
+    row-gap: 10px;*/
+    gap: 10px;
+
+}
+main section{
+    background: steelblue; 
+    color: #fff;
+    font-size: 20px;
+    border: skyblue 1px solid;
+    
 
 }
