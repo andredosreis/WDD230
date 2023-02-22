@@ -12,13 +12,22 @@ header h2 {
 }
 
 
-
+/*
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     padding: 10px;
+}*/
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+   
+    margin: auto;
+   
+    gap: 10px;
 }
+
 .section-1{
     width: 400px;
     height: auto;
@@ -50,8 +59,3 @@ a{
 
 /*media queries*/
 
-@media screen and (max-width: 400px){
-    .grid{
-        grid-template-columns: 1fr ;
-    }
-}
