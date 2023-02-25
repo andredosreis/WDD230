@@ -15,12 +15,16 @@
 Esta paleta transmite confiança e estabilidade, além de destacar a importância da tradição e da história da região.*/
 
 /*header*/
-/*azul  #427dceaf;*/
+/*azul  #14213d;*/
 
 /*footer E nav*/
 /*dourado #FFD700*/
 /*nav*/
 /*#004b1c*/
+
+:root{
+  --font_hader: color:#14213d;
+}
 
 body{
   display: block;
@@ -35,7 +39,7 @@ body{
 }
 }
 header{
-  background-color: #427dceaf;
+  background-color: var(--font_hader);
   
   display: flex;
   
