@@ -21,9 +21,19 @@ Esta paleta transmite confiança e estabilidade, além de destacar a importânci
 /*dourado #FFD700*/
 /*nav*/
 /*#004b1c*/
+/* Fundo brando*/
 
 :root{
-  --font_hader: color:#14213d;
+  --color_header: #14213d;
+  --nav:#fff;
+  --font_titles: 'Lato', sans-serif, 'Open Sans';
+  --font_words: 'Ubuntu', sans-serif;
+  --holder: red;
+
+
+}
+h1,h2,h3{
+  font-family: var(--font_titles);
 }
 
 body{
@@ -39,12 +49,17 @@ body{
 }
 }
 header{
-  background-color: var(--font_hader);
+  background-color: var(--color_header);
+  
   
   display: flex;
   
 
 }
+header img{
+  filter: invert(1);
+}
+
 @media screen and (min-width: 840px){
 nav {
     
@@ -59,13 +74,14 @@ nav{
 
 
 nav a{
-  color:  #004b1c;
+  color: var(--nav);
+  text-decoration: none;
   
 
 
 }
 nav a:hover{
-  color: white;
+  color: var(--holder);
 }
 
 /*main*/
@@ -129,7 +145,8 @@ table.tabela1 td {
 }
 
 table.tabela1 td.bl{
-  background-color:#427dceaf;
+  background-color: var(--color_header);
+  color: var(--nav);
 }
 
 table.tabela1 td.gol{
@@ -151,10 +168,10 @@ table.tabela1 td.gr{
 }
 @media screen and (min-width: 840px){
 h1, h2, h3, h4, h5 {
-    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-family: var(--font_titles);
 }
   p{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--font_words);
   }
 }
 
@@ -197,4 +214,9 @@ table.persona th{
 
 .paragraph{
   text-align: center ;
+}
+
+footer span{
+  font-size: 1rem;
+  color: yellow;
 }

@@ -38,7 +38,7 @@ let daynames = [
         month: "short",
         year: "numeric",
       };
-      document.getElementById("currentDate").textContent = 'Last Update: ' +
+      document.getElementById("currentDate").textContent =
         new Date().toLocaleDateString("en-US", options);
   } catch (e) {
     alert("Error with code or your browser does not support Locale");

@@ -1,22 +1,10 @@
-//select the date element to manipulate(output to)
-const datefield = document.querySelector(".date");
+const span = document.querySelector("last");
 
-//derive the current date using a date object
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-	now
-);
-datefield.innerHTML = `<em>${fulldate}</em>`; 
+span.textContent = 'Last Updated';
 
-//Footer //
-
-/*document.getElementById("it").textContent = 'deu certo';
-
-
-document.getElementById(".last").textContent ='agora vai';
-
-*/
-
+const a = document.querySelector("it");
+a.textContent = "Last Updated";
+/*
 let daynames = [
     "Sunday",
     "Monday",
@@ -47,7 +35,7 @@ let daynames = [
   
   let fulldat =  dayName + " " + monthName + " " + d.getDate() + ", " + d.getFullYear();
   
- document.getElementById("last").textContent = "Last Updated: " + fulldat;
+  document.getElementById("currentDate").textContent = "Last Updated: " + fulldat;
   
   try { 
       let options = {
@@ -56,8 +44,8 @@ let daynames = [
         month: "short",
         year: "numeric",
       };
-      document.getElementById("last").textContent = "Last Update: " + new Date().toLocaleDateString("en-US", options);
+      document.getElementById("currentDate").textContent = new Date().toLocaleDateString("en-US", options);
   } catch (e) {
     alert("Error with code or your browser does not support Locale");
   }
-  
+  */
